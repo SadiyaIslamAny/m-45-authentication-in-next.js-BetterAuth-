@@ -15,6 +15,7 @@ const SignUpPage = () => {
             name: userData.name,
             email: userData.email,
             password: userData.password,
+            callbackURL: '/'
         })
         console.log('signup response:', {data,error})
     };
