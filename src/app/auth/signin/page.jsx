@@ -15,7 +15,7 @@ const SignInPage = () => {
             email: userData.email, // required
             password: userData.password, // required
             rememberMe: true,
-            callbackURL: '/',
+            callbackURL: '/dashboard',
         });
 
         console.log('signin response', { data, error })
