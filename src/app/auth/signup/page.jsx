@@ -18,6 +18,12 @@ const SignUpPage = () => {
             callbackURL: '/'
         })
         console.log('signup response:', {data,error})
+        if(error){
+            alert('error signing up: ' + error.message);
+        }
+        if(data){
+            alert('signup successful! please check your email to verify your account');
+        }
     };
     return (
         <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
